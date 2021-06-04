@@ -1,4 +1,17 @@
+#em_construcao{
+  display: none;
+}
 body {
   background-color: #4c638b;
   color: #FFF;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#temp_logo{
+  width: 300px;
+  margin: auto; 
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
