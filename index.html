@@ -4,88 +4,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="./scripts/main_script.js"></script>
   <title>Sued Têxtil</title>
 </head>
 <body>
-  <div id="em_construcao">
-  <header>
-    <img src="images/logo_SuedTextil.svg" alt="sued têxtil">
+  <header id="navbar">
+    <a href="#home">
+      <img src="images/logo_SuedTextil_branco.svg" alt="sued têxtil">
+    </a>
     <nav>
-      <ul>
-        <li>Quem Somos</li>
-        <li>Portfolio</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
+        <ul>
+        <li><a href="#quem_somos">Quem Somos</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
   </header>
   <section id="home">
-    <div class="logo_Home"><img id="logo" src="images/logo_SuedTextil.svg" alt="logotipo Sued têxtil"></div>
-    <div class="carrossel"><img id="temp" src="images/large02.jpg"></div>
-    <div class="menu_Home">
+    <div class="home">
+      <img id="logo_home" src="images/logo_SuedTextil.svg" alt="logotipo Sued têxtil">
+      <div id="chamada_home">Qualidade que sua <br> marca procura</div>
       <nav>
-      <ul>
-        <li>Quem Somos</li>
-        <li>Portfolio</li>
-        <li>Contato</li>
-      </ul>
+        <ul>
+        <li><a href="#quem_somos">Quem Somos</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        </ul>
       </nav>
     </div>
+    <div class="wideBg carrossel"><img src="images/large01.jpg"></div>
   </section>
   <section id="quem_somos">
-    <div class="carrossel_2"><img id="temp" src="images/large03.jpg"></div>
+    <div class="wideBg carrossel_2">
+      <img src="images/large02.jpg">
+      <div id="chamada2">Lorem ipsum <br> dolor sit amet</div>
+      <img id="abvtex" src="images/SELO-ABVTEX.jpg">
+    </div>
     <div class="infos">
-      <img src="images/temp.jpg" alt="foto da empresa" id="empresa">
+      <img src="images/sued.jpeg" alt="foto da empresa" id="empresa">
       <div id="texto_quem_somos">
-        <p>Sed facilisis elementum dapibus. Nulla consectetur, tortor
-          at rutrum euismod, ipsum magna varius tellus, in
-          malesuada mi elit consectetur urna. Proin non tellus sem.
-          Etiam semper pretium metus quis dapibus. Praesent
-          tempor felis quis vulputate fringilla. Vestibulum placerat
-          sapien vel massa consequat cursus. Vivamus id magna
-          sed nisl pretium tempus non eget enim. Vivamus dapibus
-          eget diam id pulvinar. Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos
-          himenaeos. Sed nisl enim, sollicitudin quis facilisis et,
-          rutrum quis velit. Phasellus congue purus eu sapien
-          ornare fringilla. Suspendisse dapibus ullamcorper orci et
-          commodo. Nullam gravida tempor turpis eget venenatis.
+        <p>Desde 1998 no mercado focado ao atendimento de Private Label,
+          somos especialistas e referência na produção de Polos no segmento 
+          de moda masculina. 
         </p>
-        <button id="btn_fale_conosco">Fale conosco</button>
+        <p>
+          Somos uma empresa com certificação ABVTEX e preocupada com a 
+          responsabilidade social de toda nossa cadeia produtiva. Temos 
+          orgulho de formarmos parcerias de longos anos com nossos 
+          subcontratados e clientes.
+        </p>
+        <p>
+          Buscamos atualização com as tendências de moda, oferecendo aos
+           clientes materiais variados, desenvolvimento de artigos e 
+           estilos diversos, focando na qualidade do produto e do 
+           atendimento ao cliente.
+        </p>
+        <a href="#contato"><button id="btn_fale_conosco">Fale conosco</button></a>
       </div>
     </div>
   </section>
   <section id="portfolio">
-
+    <img id="foto01" class="_1x1" onClick="telaCheia(this.id)" src="./images/galeria/foto01.jpg">
+    <img id="foto02" class="_1x1" onClick="telaCheia(this.id)" src="./images/galeria/foto02.jpg">
+    <img id="foto03" class="_2x3" onClick="telaCheia(this.id)" src="./images/galeria/foto03.jpg">
+    <img id="foto04" class="_2x1" onClick="telaCheia(this.id)" src="./images/galeria/foto04.jpg">
+    <img id="foto05" class="_2x2" onClick="telaCheia(this.id)" src="./images/galeria/foto05.jpg">
+    <img id="foto06" class="_1x2" onClick="telaCheia(this.id)" src="./images/galeria/foto06.jpg">
+    <img id="foto07" class="_1x2" onClick="telaCheia(this.id)" src="./images/galeria/foto07.jpg">
+    <img id="foto08" class="_1x2" onClick="telaCheia(this.id)" src="./images/galeria/foto08.jpg">
+    <img id="foto09" class="_1x2" onClick="telaCheia(this.id)" src="./images/galeria/foto09.jpg">
+    <img id="foto10" class="_1x1" onClick="telaCheia(this.id)" src="./images/galeria/foto10.jpg">
+    <img id="foto11" class="_1x1" onClick="telaCheia(this.id)" src="./images/galeria/foto11.jpg">
+    <img id="foto12" class="_2x2" onClick="telaCheia(this.id)" src="./images/galeria/foto12.jpg">
+    <img id="foto13" class="_2x1" onClick="telaCheia(this.id)" src="./images/galeria/foto13.jpg">
   </section>
+  <div id="tela_cheia" class="oculto">
+    <button onClick="fechar_imagem()" id="fechar_imagem">
+      <i class="gg-close"></i>
+    </button>
+  </div>
   <section id="contato">
     <div id="endereco_e_mapa">
-      <div id="mapa"></div>
-      <div id="endereco">
-        R. Werner Duwe, 1606 <br> Testo Salto - CEP 89070-758 <br> Blumenau, Santa Catarina <br> <strong>(47) 3144-2500</strong> <br> contato@suedtextil.com.br
-      </div>
+      <div id="mapa">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=1606%20werner%20duwe%20blumenau&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <a href="https://putlocker-is.org"></a><br>
+          </style>
+         </div>
+       </div>
+       <strong>(47) 3144-2500 | contato@suedtextil.com.br </strong> 
     </div>
     <div id="formulario_contato">
       <form>
         <label for="nome">Nome</label>
         <input type="text" placeholder="Nome Sobrenome" name="nome">
         <label for="email">E-mail*</label>
-        <input type="email" placeholder="email@dominio.com.br" name="email">
+        <input type="email" placeholder="email@dominio.com.br" name="email" required>
         <label for="telefone">Telefone</label>
         <input type="tel" placeholder="(47) 99999-9999" name="telefone">
         <label for="assunto">Assunto*</label>
-        <input type="text" placeholder="Orçamento" name="assunto">
+        <input type="text" placeholder="Orçamento" name="assunto" required>
         <label for="mensagem">Mensagem*</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <textarea name="mensagem" id="mensagem" required></textarea>
         <p id="asterisco">Itens marcados com * são obrigatórios</p>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </section>
-</div>
+
   
-  
-  
-  <img id="temp_logo" src="images/logo_SuedTextil_branco.svg" alt="">
-  <h2>Site em construção</h2>
 </body>
 </html>
