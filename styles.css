@@ -109,7 +109,7 @@ section:nth-of-type(1){
   position: absolute;
   bottom: 10vh;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 4px black;
 }
 #chamada_home{
   color: var(--azulEscuro);
@@ -145,27 +145,24 @@ a:link {
 }
 .infos img{
   margin-left: 12vw;
-  margin-top: 6vh;
+  margin-top: 5vh;
   width: 30vw;
-  height: 30vh;
+  height: 32vh;
   object-fit: cover;
   object-position:center;
 }
 #texto_quem_somos{
-  padding: 6vh 12vw 6vh 3vw;
+  padding: 5vh 12vw 5vh 3vw;
   font-family: var(--texto);
   color: var(--preto);
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.3em;
   text-align: justify;
-}
-#texto_quem_somos p{
-  margin-bottom: 0.4em;
 }
 
 #btn_fale_conosco, #formulario_contato button{
-  margin-top:  3vh;
-  font-size: 1.2em;
+  margin-top:  2vh;
+  font-size: 16px;
   padding: 1vh 2vw;
   border-radius: 0px;
   border: solid 1px var(--azulEscuro);
