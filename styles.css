@@ -25,6 +25,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 8vh;
 }
 section {
   position: relative;
