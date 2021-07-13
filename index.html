@@ -19,17 +19,20 @@
       <img src="images/logo_SuedTextil_branco.svg" alt="sued têxtil">
     </a>
     <nav>
-        <ul>
+      <ul onClick="close_menu()">
         <li><a href="#quem_somos">Quem Somos</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      </ul>
+    </nav>
+    <button id="btn_menu" onClick="open_menu()">
+      <i id="burger_menu" class="gg-menu"></i>
+    </button>
   </header>
   <section id="home">
     <div class="home">
       <img id="logo_home" src="images/logo_SuedTextil.svg" alt="logotipo Sued têxtil">
-      <div id="chamada_home">Qualidade que sua <br> marca procura</div>
+      <div id="chamada_home">Qualidade que sua marca procura</div>
       <nav>
         <ul>
         <li><a href="#quem_somos">Quem Somos</a></li>
@@ -96,13 +99,13 @@
           <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=1606%20werner%20duwe%20blumenau&t=&z=15&ie=UTF8&iwloc=&output=embed" 
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
-          <a href="https://putlocker-is.org"></a><br>
-          </style>
          </div>
        </div>
        <strong>(47) 3144-2500 | contato@suedtextil.com.br </strong> 
     </div>
-    <div id="formulario_contato">
+    <p id="abre_formulario" onClick="abrirForm()">Clique aqui e envie-nos uma mensagem</p>
+    <div id="formulario">
+      <p id="abre_mapa" class="oculto" onClick="abrirMapa()">Clique aqui para ver nosso endereço</p>
       <form>
         <label for="nome">Nome</label>
         <input type="text" placeholder="Nome Sobrenome" name="nome">

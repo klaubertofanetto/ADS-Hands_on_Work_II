@@ -27,3 +27,24 @@ function fechar_imagem(){
   local.removeChild(img);
   local.className = "oculto";
 }
+
+function abrirForm(){
+  document.getElementById("abre_formulario").className = "oculto";
+  document.getElementById("abre_mapa").className = "visivel"
+  document.getElementById("endereco_e_mapa").className = "oculto";
+  document.getElementById("formulario").id = "mobile";
+}
+function abrirMapa(){
+  document.getElementById("abre_formulario").className = "visivel";
+  document.getElementById("abre_mapa").className = "oculto"
+  document.getElementById("endereco_e_mapa").className = "visivel";
+  document.getElementById("mobile").id = "formulario";
+}
+function open_menu(){
+  document.getElementById("navbar").id="nav_fullScreen";
+  document.getElementById("burger_menu").style = "display: none";
+}
+function close_menu(){
+  document.getElementById("nav_fullScreen").id = "navbar";
+  document.getElementById("burger_menu").style = "display: block"
+}
